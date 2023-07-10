@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EarlierBird.Api", "src\EarlierBird.Api\EarlierBird.Api.csproj", "{AF2DB50A-CDCC-4C99-AEBF-6C0D72C09A68}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A08E05A2-29E6-4EA7-B11F-9C0CFDF66DE4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AF2DB50A-CDCC-4C99-AEBF-6C0D72C09A68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF2DB50A-CDCC-4C99-AEBF-6C0D72C09A68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF2DB50A-CDCC-4C99-AEBF-6C0D72C09A68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF2DB50A-CDCC-4C99-AEBF-6C0D72C09A68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{AF2DB50A-CDCC-4C99-AEBF-6C0D72C09A68} = {A08E05A2-29E6-4EA7-B11F-9C0CFDF66DE4}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B9AC407-CAB1-4255-9FDD-606DF73E4FD6}
+	EndGlobalSection
+EndGlobal
