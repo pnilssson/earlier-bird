@@ -1,5 +1,7 @@
+using EarlierBird.Application.Common.Extensions;
 using EarlierBird.Application.Common.Interfaces;
 using EarlierBird.Application.Models.Requests;
+using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 
 namespace EarlierBird.Api.Controllers
@@ -9,19 +11,27 @@ namespace EarlierBird.Api.Controllers
     public class PackageController : ControllerBase
     {
         private readonly IPackageService _packageService;
+        private IValidator<PackageGetRequest> _packageGetValidator;
 
-        public PackageController(IPackageService packageService)
+        public PackageController(IPackageService packageService, IValidator<PackageGetRequest> packageGetValidator)
         {
             _packageService = packageService;
+            _packageGetValidator = packageGetValidator;
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetPackage(string id)
+        public IActionResult GetPackage([FromRoute] PackageGetRequest request)
         {
-            var package = _packageService.GetPackage(id);
+            var validationResult = _packageGetValidator.Validate(request);
+            if (!validationResult.IsValid)
+            {
+                return BadRequest(validationResult.ErrorMessages());
+            }
+
+            var package = _packageService.GetPackage(request.Id);
 
             if (package is null)
-                return NotFound($"No package with id {id} could be found.");
+                return NotFound($"No package with id {request.Id} could be found.");
 
             return Ok(package);
         }
