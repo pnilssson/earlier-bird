@@ -9,13 +9,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{A08E05A2-29E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{A3F3B4FE-CF85-47BC-BD14-3FA21C886C3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EarlierBird.Application", "src\EarlierBird.Application\EarlierBird.Application.csproj", "{F6E37BAE-C47D-4D12-8FF2-20C854E77CD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EarlierBird.Application", "src\EarlierBird.Application\EarlierBird.Application.csproj", "{F6E37BAE-C47D-4D12-8FF2-20C854E77CD7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EarlierBird.Infrastructure", "src\EarlierBird.Infrastructure\EarlierBird.Infrastructure.csproj", "{7967145F-AED0-4ECA-8A8F-1C114537CB2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EarlierBird.Infrastructure", "src\EarlierBird.Infrastructure\EarlierBird.Infrastructure.csproj", "{7967145F-AED0-4ECA-8A8F-1C114537CB2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EarlierBird.Domain", "src\EarlierBird.Domain\EarlierBird.Domain.csproj", "{E193A2F1-A669-4534-9045-35C270486717}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EarlierBird.Domain", "src\EarlierBird.Domain\EarlierBird.Domain.csproj", "{E193A2F1-A669-4534-9045-35C270486717}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application.UnitTests", "tests\Application.UnitTests\Application.UnitTests.csproj", "{A985614A-106F-43B2-B282-9FF6E8AD2690}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.UnitTests", "tests\Application.UnitTests\Application.UnitTests.csproj", "{A985614A-106F-43B2-B282-9FF6E8AD2690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Api.UnitTests", "tests\Api.UnitTests\Api.UnitTests.csproj", "{FD0C3D67-498D-4E0A-A687-BC342ED7770B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,6 +45,10 @@ Global
 		{A985614A-106F-43B2-B282-9FF6E8AD2690}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A985614A-106F-43B2-B282-9FF6E8AD2690}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A985614A-106F-43B2-B282-9FF6E8AD2690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD0C3D67-498D-4E0A-A687-BC342ED7770B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD0C3D67-498D-4E0A-A687-BC342ED7770B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD0C3D67-498D-4E0A-A687-BC342ED7770B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD0C3D67-498D-4E0A-A687-BC342ED7770B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{7967145F-AED0-4ECA-8A8F-1C114537CB2A} = {A08E05A2-29E6-4EA7-B11F-9C0CFDF66DE4}
 		{E193A2F1-A669-4534-9045-35C270486717} = {A08E05A2-29E6-4EA7-B11F-9C0CFDF66DE4}
 		{A985614A-106F-43B2-B282-9FF6E8AD2690} = {A3F3B4FE-CF85-47BC-BD14-3FA21C886C3D}
+		{FD0C3D67-498D-4E0A-A687-BC342ED7770B} = {A3F3B4FE-CF85-47BC-BD14-3FA21C886C3D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6B9AC407-CAB1-4255-9FDD-606DF73E4FD6}

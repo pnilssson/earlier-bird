@@ -9,6 +9,6 @@ public class PackageGetRequestValidator : AbstractValidator<PackageGetRequest>
     {
         RuleFor(a => a.Id).Length(18);
         RuleFor(a => a.Id).Must(b => b.StartsWith("999")).WithMessage("'Id' must start with '999'.");
-        RuleFor(a => a.Id).Matches("/^\\d+$/").WithMessage("'Id' must only contain numbers.");
+        RuleFor(a => a.Id).Matches("^[0-9]*$").WithMessage("'Id' must only contain numbers.");
     }
 }

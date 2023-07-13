@@ -1,5 +1,4 @@
 ﻿using EarlierBird.Application.Common.Interfaces;
-using EarlierBird.Application.Services;
 using EarlierBird.Infrastructure.Persistance;
 using Microsoft.Extensions.DependencyInjection;
 
