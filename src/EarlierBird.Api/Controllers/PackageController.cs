@@ -19,7 +19,7 @@ namespace EarlierBird.Api.Controllers
             _packageGetValidator = packageGetValidator;
         }
 
-        [HttpGet("{id}")]
+        [HttpGet("{Id}")]
         public IActionResult GetPackage([FromRoute] PackageGetRequest request)
         {
             var validationResult = _packageGetValidator.Validate(request);
