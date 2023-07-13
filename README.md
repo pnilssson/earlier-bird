@@ -1,7 +1,7 @@
 Valid input:
 
 {
-"weight": 15,
+"weight": 15000,
 "length": 30,
 "height": 30,
 "width": 30
@@ -10,7 +10,7 @@ Valid input:
 Invalid input:
 
 {
-"weight": 99,
+"weight": 25000,
 "length": 30,
 "height": 30,
 "width": 30

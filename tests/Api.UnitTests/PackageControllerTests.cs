@@ -18,10 +18,7 @@ namespace Api.UnitTests
         {
             // Arrange
             var packageController = GetPackageController();
-            var request = new PackageGetRequest()
-            {
-                Id = id
-            };
+            var request = new PackageGetRequest(id);
 
             // Act
             var result = packageController.GetPackage(request);
@@ -38,10 +35,7 @@ namespace Api.UnitTests
             packageService.Setup(a => a.GetPackage(It.IsAny<string>())).Returns<Package>(null);
             var packageController = new PackageController(packageService.Object, new PackageGetRequestValidator());
 
-            var request = new PackageGetRequest()
-            {
-                Id = "999456789123456789"
-            };
+            var request = new PackageGetRequest("999456789123456789");
 
             // Act
             var result = packageController.GetPackage(request);

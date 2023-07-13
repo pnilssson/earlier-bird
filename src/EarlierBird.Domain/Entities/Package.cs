@@ -32,6 +32,6 @@ public sealed class Package
 
     private bool IsPackageValid()
     {
-        return Weight <= 20 && Length <= 60 && Height <= 60 && Width <= 60;
+        return Weight <= 20000 && Length <= 60 && Height <= 60 && Width <= 60;
     }
 }

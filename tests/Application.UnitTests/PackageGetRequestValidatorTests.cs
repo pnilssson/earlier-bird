@@ -11,10 +11,7 @@ public class PackageGetRequestValidatorTests
     {
         // Arrange
         var validator = new PackageGetRequestValidator();
-        var request = new PackageGetRequest()
-        {
-            Id = "123456789123456789"
-        };
+        var request = new PackageGetRequest("123456789123456789");
 
         // Assert
         var result = validator.TestValidate(request);
@@ -29,10 +26,7 @@ public class PackageGetRequestValidatorTests
     {
         // Arrange
         var validator = new PackageGetRequestValidator();
-        var request = new PackageGetRequest()
-        {
-            Id = "999abc789123456789"
-        };
+        var request = new PackageGetRequest("999abc789123456789");
 
         // Assert
         var result = validator.TestValidate(request);
@@ -47,10 +41,7 @@ public class PackageGetRequestValidatorTests
     {
         // Arrange
         var validator = new PackageGetRequestValidator();
-        var request = new PackageGetRequest()
-        {
-            Id = "999123"
-        };
+        var request = new PackageGetRequest("999123");
 
         // Assert
         var result = validator.TestValidate(request);
